@@ -28,12 +28,43 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Form1";
+            txtFact = new TextBox();
+            btnGetFact = new Button();
+            SuspendLayout();
+            // 
+            // txtFact
+            // 
+            txtFact.Location = new Point(12, 12);
+            txtFact.Multiline = true;
+            txtFact.Name = "txtFact";
+            txtFact.Size = new Size(159, 131);
+            txtFact.TabIndex = 0;
+            // 
+            // btnGetFact
+            // 
+            btnGetFact.Location = new Point(177, 12);
+            btnGetFact.Name = "btnGetFact";
+            btnGetFact.Size = new Size(206, 104);
+            btnGetFact.TabIndex = 1;
+            btnGetFact.Text = "Узнать факт";
+            btnGetFact.UseVisualStyleBackColor = true;
+            // 
+            // Form1
+            // 
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(800, 450);
+            Controls.Add(btnGetFact);
+            Controls.Add(txtFact);
+            Name = "Form1";
+            Text = "Form1";
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
+
+        private TextBox txtFact;
+        private Button btnGetFact;
     }
 }
