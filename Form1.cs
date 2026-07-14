@@ -12,9 +12,11 @@ namespace DogPep
         public Form1()
         {
             InitializeComponent();
+
             button1.Click += BtnImage_Click;
             btnGetFact.Click += BtnFact_Click;
         }
+
         private async void BtnImage_Click(object sender, EventArgs e)
         {
             string url = await api.GetDogImage();
@@ -23,6 +25,7 @@ namespace DogPep
                 pictureBox1.Load(url);
             }
         }
+
         private async void BtnFact_Click(object sender, EventArgs e)
         {
             txtFact.Text = "»щем собаку...";
