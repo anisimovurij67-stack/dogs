@@ -45,12 +45,13 @@
             // 
             // btnGetFact
             // 
+            btnGetFact.BackColor = SystemColors.HotTrack;
             btnGetFact.Location = new Point(605, 193);
             btnGetFact.Name = "btnGetFact";
             btnGetFact.Size = new Size(183, 28);
             btnGetFact.TabIndex = 1;
             btnGetFact.Text = "Узнать факт";
-            btnGetFact.UseVisualStyleBackColor = true;
+            btnGetFact.UseVisualStyleBackColor = false;
             // 
             // pictureBox1
             // 
@@ -80,6 +81,7 @@
             Controls.Add(txtFact);
             Name = "Form1";
             Text = "Form1";
+            Load += Form1_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
